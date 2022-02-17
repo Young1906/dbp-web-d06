@@ -1,0 +1,114 @@
+body {
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+.collapsed {
+    display: none;
+}
+
+.todoItem-title {
+    font-size: large;
+}
+
+.todoItem-date {
+    /* margin: 10 0 5 0; */
+    border: solid 1px lightblue;
+    width: fit-content;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.todoItem-desc {
+    /* font-size: small; */
+    color: rgba(0,0,0,.5);
+    font-weight: 300;
+    padding: 10 0 10 0;
+}
+
+.todoItem-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    padding: 5 5 5 10px;
+    border: 1px solid #D1D1D1;
+    border-radius: 5px;
+
+    /* max-width: 500px; */
+    width: 100%;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.todoItem-container.collapsed {
+    flex-direction: row;
+    align-items: center;
+}
+
+.todoItem-container.collapsed > .todoItem-title {
+    align-self:flex-start center;
+    width: fit-content;
+    font-size: large;
+    /* min-width: 60%; */
+    /* align-items: center; */
+}
+
+.todoItem-container.collapsed > .todoItem-date {
+    border: transparent;
+}
+
+
+.todoItem-btnContainer {
+    margin: 5 0 5 0;
+}
+
+.todoItem-container.collapsed > .todoItem-btnContainer {
+    /* min-width: 156px; */
+    align-self:flex-end center;
+    /* align-items: center; */
+}
+
+/* If Item Mark Done */
+.todoItem-container.done {
+    /* color:#ADC2A9; */
+    border: transparent;
+    background-color: #CEE5D0;
+}
+
+.todoItem-container.done > .todoItem-btnContainer {
+    display: none;
+    /* margin: 0 0 20 0; */
+}
+
+.todoItem-btn{
+    padding: 2 px;
+    border: 1px solid whitesmoke;
+    background-color: transparent;
+    border-radius: 5px;
+    margin: 0 5 0 0px;
+    color: gray
+}
+
+
+.todolist-container {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.todolist-todoContainer{
+    width: 500px;
+}
+
+.app-addBtn{
+    width: 100;
+    font-size: large;
+    border-radius: 5px;
+    padding: 5;
+    background-color: #456268;
+    color: whitesmoke;
+    border:transparent;
+}
